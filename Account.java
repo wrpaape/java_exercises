@@ -1,18 +1,19 @@
 class Account {
+  static String bankName;
   int accountNo;
   String accountName;
   double balance;
 
-  public Account(int no, String name, double bal) {
-    accountNo = no;
-    accountName = name;
-    balance = bal;
+  public Account(int accountNo, String accountName, double balance) {
+    this.accountNo = accountNo;
+    this.accountName = accountName;
+    this.balance = balance;
   }
 
-  public Account(int no, String name) {
-    accountNo = no;
-    accountName = name;
-    balance = 10;
+  public Account(int accountNo, String accountName) {
+    this.accountNo = accountNo;
+    this.accountName = accountName;
+    this.balance = 10;
   }
 
   public void deposit(double amount) {

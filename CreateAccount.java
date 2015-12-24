@@ -1,5 +1,6 @@
 class CreateAccount {
   public static void main(String[] args) {
+    Account.bankName = "Ealing Bank";
     Account reidsAccount = new Account(123, "Reid", 50);
     Account billysAccount = new Account(123, "Billy");
   

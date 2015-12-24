@@ -4,11 +4,11 @@
  * and open the template in the editor.
  */
 package babbynetbeansapp;
-
 /**
  *
  * @author Reid
  */
+
 public class BabbyNetBeansApp {
     static final double PI = 3.14159;
     /**
@@ -22,5 +22,4 @@ public class BabbyNetBeansApp {
         area = PI * (radius * radius);
         System.out.println("A circle of radius " + args[0] + " has area of " + area);
     }
-    
 }

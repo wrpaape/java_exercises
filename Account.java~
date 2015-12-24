@@ -9,8 +9,20 @@ class Account {
     balance = bal;
   }
 
+  public Account(int no, String name) {
+    accountNo = no;
+    accountName = name;
+    balance = 10;
+
   public void deposit(double amount) {
     balance += amount;
+  }
+
+  public void deposit(double amount, double level) {
+    deposit(amount);
+    if (balance > level) {
+      System.out.println("Current balance = " + balance);
+    }
   }
 
   public void clearBalance() {
@@ -18,7 +30,7 @@ class Account {
   }
 
   public double withdraw(double amount) {
-    if (balace - amount < 0) {
+    if (balance - amount < 0) {
       System.out.println("Insufficient Funds");
     } else {
       balance -= amount;

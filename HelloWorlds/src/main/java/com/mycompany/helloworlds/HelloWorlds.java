@@ -18,7 +18,6 @@ public class HelloWorlds {
             CycSessionManager.getCurrentSession().getOptions().setDefaultContext(
             ContextFactory.getDefaultContext(ContextFactory.UV_MT, ContextFactory.INFERENCE_PSC));
                
-            //KbCollection planetInSolarSystem = KbCollectionFactory.get("Mx4rWIie-jN6EduAAADggVbxzQ");
             KbCollection planetInTheSolarSystem = KbCollectionFactory.get("PlanetInTheSolarSystem");
             Set<KbIndividual> planets = (Set<KbIndividual>) planetInTheSolarSystem.getInstances();
             for (KbIndividual planet : planets) {

@@ -52,7 +52,7 @@ public class ReversePolish {
 
 								switch (token) {
 									case '+':
-										operand1 += operand2;
+										operand1 = operand2 + operand1;
 										break;
 
 									case '-':
@@ -64,8 +64,7 @@ public class ReversePolish {
 										break;
 
 									default:
-										operand1 *= operand2;
-										break;
+										operand1 = operand2 * operand1;
 								}
 
 								accumulator.push(operand1);
